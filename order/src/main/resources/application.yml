@@ -1,0 +1,17 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: spring-cloud-consul-producer
+
+  cloud:
+    consul:
+      host: 127.0.0.1
+      port: 8500
+      enabled: true
+      discovery:
+        heartbeat:
+          enabled: true
+        healthCheckPath: /actuator/health
+        enabled: true
+
